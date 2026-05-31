@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convite de aniversário da Alyce - Uma festa mágica inspirada em Enrolados">
+    <title>Convite da Alyce</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/photos/birthday-80.png">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Lantern Animation Canvas Background -->
+    <canvas id="lantern-canvas" aria-hidden="true"></canvas>
+
+    <!-- Audio Element (hidden) -->
+    <audio id="audio-element" loop preload="metadata">
+        <source src="assets/audio/I_See_the_Light_Tangled.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Small Mute Button -->
+    <button id="mute-btn" class="mute-btn" aria-label="Mutar música">🔊</button>
+
+    <!-- Main Invitation Container -->
+    <main class="invitation-container">
+        <!-- Header Section -->
+        <header class="invitation-header animate-pop">
+            <div class="sun-icon">☀️</div>
+            <h1>💜 Soltem as Lanternas! 💜</h1>
+            <p class="subtitle">"Vejo a luz brilhar..."</p>
+        </header>
+
+        <!-- Profile Image Slider Section -->
+        <section class="profile-slider-section" aria-label="Fotos da Alyce">
+            <div class="profile-slider-container">
+                <div id="profile-slides" class="profile-slides">
+                    <!-- As imagens serão inseridas via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Party Information Section -->
+        <section class="party-info" aria-labelledby="party-info-heading">
+            <h2 id="party-info-heading" class="sr-only">Informações da Festa</h2>
+            
+            <p>Cansei de ficar escondida na torre! No dia <strong>07/06/2026</strong>, vou sair para comemorar o meu aniversário com uma festa cheia de cores, luzes e, claro, muita diversão.</p>
+            
+            <p>Minha lista de convidados especiais já está pronta, e o seu nome está no topo do aniversário da <span class="highlight-name">Alyce!</span></p>
+            
+            <div class="info-box">
+                <div class="info-item">
+                    <span aria-label="Localização">📍</span>
+                    <strong>Onde nos encontramos:</strong> Associação da Boito
+                </div>
+                <div class="info-item">
+                    <span aria-label="Horário">🕒</span>
+                    <strong>A que horas a magia começa:</strong> 15h
+                </div>
+            </div>
+            
+            <p class="footer-text">Não perca! Afinal, o melhor dia de todos é aquele que passamos com os amigos. ✨</p>
+        </section>
+
+        <!-- Countdown Timer Section -->
+        <section class="countdown-section" aria-labelledby="countdown-heading">
+            <h2 id="countdown-heading">Contagem Regressiva</h2>
+            <div id="countdown-timer" class="countdown-timer" role="timer" aria-live="polite">
+                <!-- Countdown will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- RSVP Form Section -->
+        <section class="rsvp-section" aria-labelledby="rsvp-heading">
+            <h2 id="rsvp-heading">Confirme sua Presença</h2>
+            <form id="rsvp-form" class="rsvp-form" novalidate data-whatsapp-number="5554996987373">
+                <div class="form-group">
+                    <label for="guest-name">Seu Nome *</label>
+                    <input 
+                        type="text" 
+                        id="guest-name" 
+                        name="name" 
+                        placeholder="Digite seu nome" 
+                        required 
+                        aria-required="true"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-message">Deixe uma Mensagem (opcional)</label>
+                    <textarea 
+                        id="guest-message" 
+                        name="message" 
+                        placeholder="Deixe uma mensagem carinhosa para a Alyce"
+                        rows="4"
+                    ></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    ✨ Confirmar Presença
+                </button>
+                
+                <div class="form-message" role="alert" aria-live="assertive"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Sparkle Effects Container -->
+    <div id="sparkle-container" class="sparkle-container" aria-hidden="true"></div>
+
+    <!-- JavaScript Script -->
+    <script src="script.js"></script>
+</body>
+</html>
