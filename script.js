@@ -270,7 +270,13 @@ document.addEventListener('DOMContentLoaded', () => {
     'assets/images/photos/alyce-1.jpg',
     'assets/images/photos/alyce-2.jpg',
     'assets/images/photos/alyce-3.jpg',
-    'assets/images/photos/alyce-4.jpg'
+    'assets/images/photos/alyce-4.jpg',
+    'assets/images/photos/alyce-5.jpg',
+    'assets/images/photos/alyce-6.jpg',
+    'assets/images/photos/alyce-7.jpg',
+    'assets/images/photos/alyce-8.jpg',
+    'assets/images/photos/alyce-9.jpg',
+    'assets/images/photos/alyce-10.jpg'
   ];
   new ProfileSlider('profile-slides', photos);
 
