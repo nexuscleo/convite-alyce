@@ -373,8 +373,6 @@ section h2 {
   padding: 0 10px;
   position: relative;
   z-index: 10;
-  border: 1px solid var(--color-accent);
-  border-radius: var(--border-radius-small);
 }
 
 .nexus-link {
@@ -384,11 +382,17 @@ section h2 {
   text-shadow: 0 0 5px #00f2ff, 0 0 10px #00f2ff;
   opacity: 0.6;
   transition: var(--transition-smooth);
+  display: inline-block;
+  border: 1px solid #00f2ff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #00f2ff;
 }
 
 .nexus-link:hover {
   opacity: 1;
   text-shadow: 0 0 8px #00f2ff, 0 0 15px #00f2ff, 0 0 20px #00f2ff;
+  box-shadow: 0 0 12px #00f2ff, inset 0 0 4px #00f2ff;
 }
 
 /* ===================================
