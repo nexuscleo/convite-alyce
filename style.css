@@ -373,12 +373,14 @@ section h2 {
   padding: 0 10px;
   position: relative;
   z-index: 10;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--border-radius-small);
 }
 
 .nexus-link {
   color: #00f2ff;
   text-decoration: none;
-  font-size: 0.825rem; /* Aumentado em 10% (de 0.75rem) */
+  font-size: 1rem; /* Aumentado em mais 20% */
   text-shadow: 0 0 5px #00f2ff, 0 0 10px #00f2ff;
   opacity: 0.6;
   transition: var(--transition-smooth);
