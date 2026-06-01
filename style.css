@@ -363,10 +363,38 @@ section h2 {
 }
 
 /* ===================================
+   FOOTER STYLES
+   =================================== */
+.nexus-footer {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto 2rem;
+  text-align: right;
+  padding: 0 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.nexus-link {
+  color: #00f2ff;
+  text-decoration: none;
+  font-size: 0.825rem; /* Aumentado em 10% (de 0.75rem) */
+  text-shadow: 0 0 5px #00f2ff, 0 0 10px #00f2ff;
+  opacity: 0.6;
+  transition: var(--transition-smooth);
+}
+
+.nexus-link:hover {
+  opacity: 1;
+  text-shadow: 0 0 8px #00f2ff, 0 0 15px #00f2ff, 0 0 20px #00f2ff;
+}
+
+/* ===================================
    RESPONSIVE
    =================================== */
 @media (min-width: 768px) {
   .invitation-container { padding: 40px 30px; max-width: 900px; }
+  .nexus-footer { max-width: 900px; padding: 0 30px; }
   .invitation-header h1 { font-size: 3.5rem; }
   .info-box { display: flex; gap: 30px; justify-content: center; }
   .countdown-timer { grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -375,6 +403,7 @@ section h2 {
 
 @media (min-width: 1024px) {
   .invitation-container { padding: 60px 40px; max-width: 1200px; }
+  .nexus-footer { max-width: 1200px; padding: 0 40px; }
 }
 
 @media (hover: none) and (pointer: coarse) {
